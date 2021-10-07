@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.16">
+<title>Company Logo</title>
+<style>
+/* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
+
+@import url(//fonts.googleapis.com/css?family=Noto+Sans);
+@import url(https://cdn.jsdelivr.net/gh/asciidoctor/asciidoctor@2.0/data/stylesheets/asciidoctor-default.css); /* Default asciidoc style framework - important */
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+
+/* CUSTOMISATIONS */
+/* Change the values in root for quick customisation. If you want even more fine grain... venture further. */
+:root{
+--maincolor:#FFFFFF;
+--primarycolor:#000000;
+--secondarycolor:#AAAAAA;
+--tertiarycolor:#CCCCCC;
+--sidebarbackground:#CACACA;
+--linkcolor:#18166e;
+--linkcoloralternate:#B71C1C;
+--white:#FFFFFF;
+--black:#000000;
+}
+
+/* Text styles */
+
+body{font-family: "Roboto",sans-serif;background-color: var(--maincolor);color:var(--black);}
+
+h1{color:var(--primarycolor) !important;font-family:"Roboto",sans-serif;}
+h2,h3,h4,h5,h6{color:var(--secondarycolor) !important;font-family:"Roboto",sans-serif;}
+.title{color:var(--black) !important;font-family:"Roboto",sans-serif;font-style: normal; font-weight: normal;}
+a{text-decoration: none;}
+p{font-family: "Roboto",sans-serif ! important}
+#toc.toc2 a:link{color:var(--linkcolor) !important;font-weight:bold !important;}
+blockquote{color:var(--secondarycolor) !important}
+.quoteblock{color:var(--black)}
+.quoteblock blockquote:before{color:var(--black)}
+code{color:var(--white);background-color: var(--secondarycolor) !important}
+mark{background-color: var(--tertiarycolor)} /* Text highlighting color */
+
+/* Table styles */
+th{background-color: var(--maincolor);color:var(--black) !important;}
+td{background-color: var(--maincolor);color: var(--black) !important}
+
+
+#toc.toc2{background-color:var(--sidebarbackground);}
+#toctitle{color:var(--white);}
+
+
+/* Responsiveness fixes */
+video {
+  max-width: 100%;
+}
+
+@media all and (max-width: 600px) {
+table {
+  width: 55vw!important;
+  font-size: 3vw;
+}
+}
+@media all and (min-width: 700px){
+  body.toc2 {
+    padding-left: 26em;
+  }
+  
+  #toc.toc2 {
+     /* initially 20em */
+     width: 25em;
+  }
+}
+</style>
+</head>
+<body class="article toc2 toc-left">
+<div id="header">
+<h1><span class="image"><img src="./images/logo.jpeg" alt="arc42"></span> Company Logo</h1>
+<div id="toc" class="toc2">
+<div id="toctitle">Ingeniería de Requisitos</div>
+<ul class="sectlevel1">
+<li><a href="#section-introduction-and-goals">1. A ver chavales que os hago un quick tour</a>
+<ul class="sectlevel2">
+<li><a href="#_unas_tablitas_pedrín">1.1. Unas tablitas Pedrín</a>
+<ul class="sectlevel3">
+<li><a href="#_y_bueno_aqui_os_dejo_otro_indice_de_la_tabla_de_contenidos_para_que_veais_que_hay_multinivel_bien_xd">1.1.1. Y bueno aqui os dejo otro indice de la tabla de contenidos para que veais que hay multinivel bien xd</a>
+<ul class="sectlevel4">
+<li><a href="#_para_modificar_los_niveles_del_toc_hay_que_modificar_el_toclevels_en_index_adoc_y_en_plain_css_teneis_una_mediaquery_para_modificar_el_tamaño_del_menú_de_la_toc">Para modificar los niveles del ToC hay que modificar el :toclevels: en index.adoc y en plain.css teneis una mediaquery para modificar el tamaño del menú de la ToC</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<style>
+.arc42help {font-size:small; width: 20px; height: 20px; overflow: hidden; position: absolute; right: 0px; padding: 2px 0px 3px 2px;}
+.arc42help::before {content: "😱";}
+.arc42help:hover {width:auto; height: auto; z-index: 100; padding: 10px;}
+.arc42help:hover::before {content: "";}
+@media print {
+	.arc42help {display:hidden;}
+}
+</style>
+<hr>
+<div class="sidebarblock arc42help">
+<div class="content">
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>👌🏻 Picaste xddddddd</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="section-introduction-and-goals">1. A ver chavales que os hago un quick tour</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Pa poner un título poneis lo siguiente:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>== A ver chavales que hay que espabilar</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Para crear nuevos párrafos hay que dejar una línea en blanco entre
+el texto que se quiere separar.</p>
+</div>
+<div class="paragraph">
+<p>Bueno pues el elemento lista de arriba ⬆ se hace creando un párrafo
+nuevo y poniendo * &lt;texto&gt;.</p>
+</div>
+<div class="paragraph">
+<p>Podeis hacer párrafos con fondo dejando un espacio
+en blanco delante del texto ⬇</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Este es un párrafo sin padding pero anda que no queda guapisimo este párrafo manin</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>AHORA BIEN, LAS LISTAS LAS VAMOS A CREAR DE LA SIGUIENTE FORMA <strong>CHECKEALO</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>RF1</p>
+<div class="ulist">
+<ul>
+<li>
+<p>RF1.1</p>
+</li>
+<li>
+<p>RF1.2</p>
+<div class="ulist">
+<ul>
+<li>
+<p>RF1.2.1</p>
+</li>
+<li>
+<p>RF1.2.2</p>
+<div class="ulist">
+<ul>
+<li>
+<p>RF1.2.2.1</p>
+<div class="ulist">
+<ul>
+<li>
+<p>RF1.2.2.1.1</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>RF1.3</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>RF2: El sistema deberá permitir al grupo 5.2 sacar una nota con valor NOTA_MÁXIMA en la asignatura de Ingeniería de Requisitos.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Si quieres poner algo en _italics pones _</p>
+</div>
+<div class="paragraph">
+<p>Si quieres algo en <strong>negrita</strong> pones</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>** text **</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Hipervínculos ⬇</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>link:http://hacker.de/robo-tus-datos-tonto/login.php URL inofensiva]</pre>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_unas_tablitas_pedrín">1.1. Unas tablitas Pedrín</h3>
+<div class="ulist">
+<div class="title">Mira que subtitulo más guapo he puesto aquí, pa que veas</div>
+<ul>
+<li>
+<p>Otra lista whynot</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 40%;">
+<col style="width: 60%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Requisito</th>
+<th class="tableblock halign-left valign-top">Defecto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">El nombre se meterá en un campo de texto</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dependiente del diseño, haber estudiao que este fallo es de matao.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Otra row venga</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ya no más que están muy caras</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Otra tablina pero mira que bien que esta tiene título y se autogenera el índice</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Role/Name</th>
+<th class="tableblock halign-left valign-top">Realidad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">El jefe del equipo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">El malo de la película.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 2. Lo siento esta viene vacía</caption>
+</table>
+<div class="sect3">
+<h4 id="_y_bueno_aqui_os_dejo_otro_indice_de_la_tabla_de_contenidos_para_que_veais_que_hay_multinivel_bien_xd">1.1.1. Y bueno aqui os dejo otro indice de la tabla de contenidos para que veais que hay multinivel bien xd</h4>
+<div class="sect4">
+<h5 id="_para_modificar_los_niveles_del_toc_hay_que_modificar_el_toclevels_en_index_adoc_y_en_plain_css_teneis_una_mediaquery_para_modificar_el_tamaño_del_menú_de_la_toc">Para modificar los niveles del ToC hay que modificar el :toclevels: en index.adoc y en plain.css teneis una mediaquery para modificar el tamaño del menú de la ToC</h5>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2021-10-07 22:39:10 +0200
+</div>
+</div>
+</body>
+</html>

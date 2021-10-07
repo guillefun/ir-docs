@@ -1,0 +1,83 @@
+[[section-introduction-and-goals]]
+== A ver chavales que os hago un quick tour
+
+Pa poner un título poneis lo siguiente:
+
+*  == A ver chavales que hay que espabilar
+
+Para crear nuevos párrafos hay que dejar una línea en blanco entre 
+el texto que se quiere separar.
+
+Bueno pues el elemento lista de arriba ⬆ se hace creando un párrafo
+nuevo y poniendo * <texto>.
+
+Podeis hacer párrafos con fondo dejando un espacio
+en blanco delante del texto ⬇
+
+ Este es un párrafo sin padding pero anda que no queda guapisimo este párrafo manin
+
+AHORA BIEN, LAS LISTAS LAS VAMOS A CREAR DE LA SIGUIENTE FORMA **CHECKEALO**
+
+* RF1
+    ** RF1.1
+    ** RF1.2
+    *** RF1.2.1
+    *** RF1.2.2
+    **** RF1.2.2.1
+    ***** RF1.2.2.1.1
+    ** RF1.3
+* RF2: El sistema deberá permitir al grupo 5.2 sacar una nota con valor NOTA_MÁXIMA en la asignatura de Ingeniería de Requisitos.
+
+
+Si quieres poner algo en _italics pones _ 
+
+Si quieres algo en **negrita** pones
+
+-----
+** text **
+-----
+
+Hipervínculos ⬇ 
+
+
+-----
+link:http://hacker.de/robo-tus-datos-tonto/login.php URL inofensiva]
+-----
+
+
+=== Unas tablitas Pedrín
+
+.Mira que subtitulo más guapo he puesto aquí, pa que veas
+
+* Otra lista whynot
+
+[width="100%",cols="8,12",options="header"]
+|=========================================================
+|Requisito |Defecto
+
+|El nombre se meterá en un campo de texto |
+Dependiente del diseño, haber estudiao que este fallo es de matao.
+
+|Otra row venga|
+Ya no más que están muy caras
+
+|=========================================================
+
+
+[width="100%",options="header",cols="1,2"]
+.Otra tablina pero mira que bien que esta tiene título y se autogenera el índice
+|===
+|Role/Name|Realidad
+| El jefe del equipo | El malo de la película.
+
+|===
+
+[options="header",cols="1,2,2"]
+.Lo siento esta viene vacía
+|===
+
+|===
+
+==== Y bueno aqui os dejo otro indice de la tabla de contenidos para que veais que hay multinivel bien xd
+
+===== Para modificar los niveles del ToC hay que modificar el :toclevels: en index.adoc y en plain.css teneis una mediaquery para modificar el tamaño del menú de la ToC

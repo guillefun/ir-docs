@@ -1,0 +1,66 @@
+/* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
+
+@import url(//fonts.googleapis.com/css?family=Noto+Sans);
+@import url(https://cdn.jsdelivr.net/gh/asciidoctor/asciidoctor@2.0/data/stylesheets/asciidoctor-default.css); /* Default asciidoc style framework - important */
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+
+/* CUSTOMISATIONS */
+/* Change the values in root for quick customisation. If you want even more fine grain... venture further. */
+:root{
+--maincolor:#FFFFFF;
+--primarycolor:#000000;
+--secondarycolor:#AAAAAA;
+--tertiarycolor:#CCCCCC;
+--sidebarbackground:#CACACA;
+--linkcolor:#18166e;
+--linkcoloralternate:#B71C1C;
+--white:#FFFFFF;
+--black:#000000;
+}
+
+/* Text styles */
+
+body{font-family: "Roboto",sans-serif;background-color: var(--maincolor);color:var(--black);}
+
+h1{color:var(--primarycolor) !important;font-family:"Roboto",sans-serif;}
+h2,h3,h4,h5,h6{color:var(--secondarycolor) !important;font-family:"Roboto",sans-serif;}
+.title{color:var(--black) !important;font-family:"Roboto",sans-serif;font-style: normal; font-weight: normal;}
+a{text-decoration: none;}
+p{font-family: "Roboto",sans-serif ! important}
+#toc.toc2 a:link{color:var(--linkcolor) !important;font-weight:bold !important;}
+blockquote{color:var(--secondarycolor) !important}
+.quoteblock{color:var(--black)}
+.quoteblock blockquote:before{color:var(--black)}
+code{color:var(--white);background-color: var(--secondarycolor) !important}
+mark{background-color: var(--tertiarycolor)} /* Text highlighting color */
+
+/* Table styles */
+th{background-color: var(--maincolor);color:var(--black) !important;}
+td{background-color: var(--maincolor);color: var(--black) !important}
+
+
+#toc.toc2{background-color:var(--sidebarbackground);}
+#toctitle{color:var(--white);}
+
+
+/* Responsiveness fixes */
+video {
+  max-width: 100%;
+}
+
+@media all and (max-width: 600px) {
+table {
+  width: 55vw!important;
+  font-size: 3vw;
+}
+}
+@media all and (min-width: 700px){
+  body.toc2 {
+    padding-left: 26em;
+  }
+  
+  #toc.toc2 {
+     /* initially 20em */
+     width: 25em;
+  }
+}
