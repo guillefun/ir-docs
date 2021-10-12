@@ -44,5 +44,5 @@ endif::basebackend-html[]
 
 <<<<
 // 1. Introduction and Goals
-include::prueba.adoc[]
+include::lrp1.adoc[]
 
