@@ -3,45 +3,24 @@
 //
 // ====================================
 :stylesheet: plain.css
-
+= image:logo.jpeg[alt=Company Logo,width=440,height=280] 
 // toc-title definition MUST follow document title without blank line!
 :toc: left
 :toc-title: Ingeniería de Requisitos
 :imagesdir: ./images
 :toclevels: 4
 
+EQUIPO PL5-GRUPO2:
 
-//additional style for arc42 help callouts
-ifdef::basebackend-html[]
-++++
-<style>
-.arc42help {font-size:small; width: 20px; height: 20px; overflow: hidden; position: absolute; right: 0px; padding: 2px 0px 3px 2px;}
-.arc42help::before {content: "😱";}
-.arc42help:hover {width:auto; height: auto; z-index: 100; padding: 10px;}
-.arc42help:hover::before {content: "";}
-@media print {
-	.arc42help {display:hidden;}
-}
-</style>
-++++
-endif::basebackend-html[]
-
-
-// horizontal line
-***
-
-[role="arc42help"]
-****
-[NOTE]
-====
-====
-****
-
+ Alexander López Méndez - UO266499 
+ Diego Cabas Álvarez - UO271506 
+ Guillermo Fernández-Campoamor Fernández - UO264207 
+ Miguel Rodríguez Huerta - UO258629 
 
 // numbering from here on
 :numbered:
 
 <<<<
-// 1. Introduction and Goals
+// 1. Lista de requisitios preliminar v1.0
 include::lrp1.adoc[]
 
