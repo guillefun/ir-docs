@@ -1,12 +1,12 @@
 
-EQUIPO:
+EQUIPO PL5-GRUPO2:
 
  Alexander López Méndez - UO266499 
  Diego Cabas Álvarez - UO271506 
  Guillermo Fernández-Campoamor Fernández - UO264207 
  Miguel Rodríguez Huerta - UO258629 
 
-LISTA DE REQUISITOS INICIAL V1
+== LISTA DE REQUISITOS INICIAL V1
 
 * RF.1 El sistema permitirá al usuario no registrado crear una cuenta de usuario en el sistema IRBET proporcionando sus datos personales: 
 

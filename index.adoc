@@ -3,7 +3,7 @@
 //
 // ====================================
 :stylesheet: plain.css
-= image:logo.jpeg[arc42] Company Logo
+
 // toc-title definition MUST follow document title without blank line!
 :toc: left
 :toc-title: Ingeniería de Requisitos
@@ -34,7 +34,6 @@ endif::basebackend-html[]
 ****
 [NOTE]
 ====
-👌🏻 Picaste xddddddd
 ====
 ****
 
