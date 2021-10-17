@@ -24,3 +24,6 @@ EQUIPO PL5-GRUPO2:
 // 1. Lista de requisitios preliminar v1.0
 include::lrp1.adoc[]
 
+<<<<
+// 2. Lista de requisitios preliminar v2.0
+include::lrp2.adoc[]
