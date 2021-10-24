@@ -136,10 +136,10 @@ FUNCIONES DE USUARIO AUTENTICADO
 
 
 FUNCIONES DE SUPERUSUARIO
-//Cambio
+
 * SRU.1 El sistema deberá proveer un superusuario del sistema para los empleados de SELAE
 
-*SRU.2 El sistema permitirá al superusuario realizar las siguientes acciones:
+* SRU.2 El sistema permitirá al superusuario realizar las siguientes acciones:
 ** SRU.2.1 Respecto a cuentas de usuarios registrados:
 *** SRU.2.1.1 Ver su estado.
 *** SRU.2.1.2 Cambiar su informacion.
@@ -173,7 +173,7 @@ GESTION DE APUESTAS
 
 * RGA.5 El sistema deberá de ingresar la cuantía de los premios a los ganadores del sorteo en:
 ** RGA.5.1 El monedero virtual (LOTOBOLSA) del usuario si la cantidad es menor a CUANTIA_MIN_BANCO euros.
-*** RGA.5.1.1 Respecto a RGM.2 la cuantia que exceda CUANTIA_MAX_LOTO se trasnferirá directamente a la cuenta bancaria del ganador.//Cambio
+*** RGA.5.1.1 Respecto a RGM.2 la cuantia que exceda CUANTIA_MAX_LOTO se trasnferirá directamente a la cuenta bancaria del ganador.
 ** RGA.5.2 La cuenta bancaria del usuario si la cantidad es mayor a CUANTIA_MIN_BANCO euros y menor de CUANTIA_MAX_BANCO euros.
 
 * RGA.6 Si el ganador no tiene cuenta bancaria registrada en su cuenta y gana un premio que sobrepase CUANTIA_MAX_LOTO:
@@ -183,7 +183,7 @@ GESTION DE APUESTAS
 
 
 GESTION DE MONEDERO
-//Cambio
+
 * RGM.1 : El sistema permitirá al usuario ingresar dinero en su monedero digital (Lotobolsa) de IRBET mediante: 
 ** RGM.1.1 Tarjetas de crédito/débito.
 ** RGM.1.2 Pasarelas de pago: 
@@ -224,7 +224,7 @@ GESTION DE MONEDERO
 LISTA NO FUNCIONALES
 
 INTERFACES DE USUARIO
-//Cambio
+
 * RUI.1 El sistema deberá estar internacionalizado para los siguientes idiomas:
 ** RUI.1.1 Castellano.
 ** RUI.1.2 Catalán.
