@@ -246,7 +246,7 @@ NORMATIVAS Y LEYES
 
 
 
-= Futura tabla
+== Futura tabla
  CUANTIA_MIN_BANCO -> 2000
  CUANTIA_MAX_BANCO -> 40000
 
