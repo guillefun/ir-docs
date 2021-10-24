@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.16">
+<title>LISTA DE REQUISITOS INICIAL V3</title>
+<style>
+/* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
+
+@import url(//fonts.googleapis.com/css?family=Noto+Sans);
+@import url(https://cdn.jsdelivr.net/gh/asciidoctor/asciidoctor@2.0/data/stylesheets/asciidoctor-default.css); /* Default asciidoc style framework - important */
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+
+/* CUSTOMISATIONS */
+/* Change the values in root for quick customisation. If you want even more fine grain... venture further. */
+:root{
+--maincolor:#FFFFFF;
+--primarycolor:#000000;
+--secondarycolor:#AAAAAA;
+--tertiarycolor:#CCCCCC;
+--sidebarbackground:#CACACA;
+--linkcolor:#18166e;
+--linkcoloralternate:#B71C1C;
+--white:#FFFFFF;
+--black:#000000;
+}
+
+/* Text styles */
+
+body{font-family: "Roboto",sans-serif;background-color: var(--maincolor);color:var(--black);}
+
+h1{color:var(--primarycolor) !important;font-family:"Roboto",sans-serif;}
+h2,h3,h4,h5,h6{color:var(--secondarycolor) !important;font-family:"Roboto",sans-serif;}
+.title{color:var(--black) !important;font-family:"Roboto",sans-serif;font-style: normal; font-weight: normal;}
+a{text-decoration: none;}
+p{font-family: "Roboto",sans-serif ! important}
+#toc.toc2 a:link{color:var(--linkcolor) !important;font-weight:bold !important;}
+blockquote{color:var(--secondarycolor) !important}
+.quoteblock{color:var(--black)}
+.quoteblock blockquote:before{color:var(--black)}
+code{color:var(--white);background-color: var(--secondarycolor) !important}
+mark{background-color: var(--tertiarycolor)} /* Text highlighting color */
+
+/* Table styles */
+th{background-color: var(--maincolor);color:var(--black) !important;}
+td{background-color: var(--maincolor);color: var(--black) !important}
+
+
+#toc.toc2{background-color:var(--sidebarbackground);}
+#toctitle{color:var(--white);}
+
+
+/* Responsiveness fixes */
+video {
+  max-width: 100%;
+}
+
+@media all and (max-width: 600px) {
+table {
+  width: 55vw!important;
+  font-size: 3vw;
+}
+}
+@media all and (min-width: 700px){
+  body.toc2 {
+    padding-left: 26em;
+  }
+  
+  #toc.toc2 {
+     /* initially 20em */
+     width: 25em;
+  }
+}
+</style>
+</head>
+<body class="article data-line-1">
+<div id="header">
+</div>
+<div id="content">
+<div class="sect1 data-line-1">
+<h2 id="_lista_de_requisitos_inicial_v3">LISTA DE REQUISITOS INICIAL V3</h2>
+<div class="sectionbody">
+<div class="paragraph data-line-3">
+<p>REGISTRO DE USUARIO</p>
+</div>
+<div class="ulist data-line-5">
+<ul>
+<li class="data-line-5">
+<p>REG.1 El sistema permitirá al usuario no registrado crear una cuenta de usuario en el sistema IRBET proporcionando sus datos personales:</p>
+<div class="ulist data-line-7">
+<ul>
+<li class="data-line-7">
+<p>REG.1.1 DNI/NIF o NIE</p>
+</li>
+<li class="data-line-9">
+<p>REG.1.2 Nombre</p>
+</li>
+<li class="data-line-11">
+<p>REG.1.3 Apellidos</p>
+</li>
+<li class="data-line-13">
+<p>REG.1.4 Correo Electrónico</p>
+</li>
+<li class="data-line-15">
+<p>REG.1.5 Contraseña.</p>
+</li>
+<li class="data-line-17">
+<p>REG.1.6 Confirmación de la contraseña</p>
+</li>
+<li class="data-line-19">
+<p>REG.1.7 Dirección de domicilio</p>
+</li>
+<li class="data-line-21">
+<p>REG.1.8 Fecha de nacimiento</p>
+</li>
+<li class="data-line-23">
+<p>REG.1.9 Género</p>
+<div class="ulist data-line-24">
+<ul>
+<li class="data-line-24">
+<p>REG.1.9.1 Hombre</p>
+</li>
+<li class="data-line-25">
+<p>REG.1.9.2 Mujer</p>
+</li>
+<li class="data-line-26">
+<p>REG.1.9.3 Otro</p>
+</li>
+</ul>
+</div>
+</li>
+<li class="data-line-28">
+<p>REG.1.10 Pregunta de seguridad</p>
+</li>
+<li class="data-line-30">
+<p>REG.1.11 Respuesta secreta a la pregunta de seguridad</p>
+</li>
+<li class="data-line-32">
+<p>REG.1.12 Elegir punto de venta presencial:</p>
+<div class="ulist data-line-33">
+<ul>
+<li class="data-line-33">
+<p>REG.1.12.1 Identificador de 5 cifras</p>
+</li>
+</ul>
+</div>
+</li>
+<li class="data-line-35">
+<p>REG.1.13 Servicios de los que quiere disponer:</p>
+<div class="ulist data-line-36">
+<ul>
+<li class="data-line-36">
+<p>REG.1.13.1 Comunicación de próximos sorteos</p>
+</li>
+<li class="data-line-37">
+<p>REG.1.13.2 Información comercial sobre nuevos productos</p>
+</li>
+<li class="data-line-38">
+<p>REG.1.13.3 Encuestas por correo electrónico</p>
+</li>
+<li class="data-line-39">
+<p>REG.1.13.4 Comunicaciones de los próximos sorteos</p>
+</li>
+<li class="data-line-40">
+<p>REG.1.13.5 Información comercial sobre nuevos productos</p>
+</li>
+</ul>
+</div>
+</li>
+<li class="data-line-42">
+<p>REG.1.14 El sistema completará el proceso de alta de usuario:</p>
+<div class="ulist data-line-43">
+<ul>
+<li class="data-line-43">
+<p>REG.1.14.1 Dadas las condiciones:</p>
+<div class="ulist data-line-44">
+<ul>
+<li class="data-line-44">
+<p>REG.1.14.1.1 Los datos de registro introducidos sean correctos</p>
+</li>
+<li class="data-line-45">
+<p>REG.1.14.1.2 El usuario no exista en la base de datos</p>
+</li>
+</ul>
+</div>
+</li>
+<li class="data-line-46">
+<p>REG.1.14.2 El sistema tras comprobar que los datos correctos se procederá al proceso de autenticación, AUT.1.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li class="data-line-48">
+<p>REG.2 El sistema no permitira el registro de un usuario que haya rellenado los datos relativos a RF.1 si:</p>
+<div class="ulist data-line-49">
+<ul>
+<li class="data-line-49">
+<p>REG.2.1 El usuario que se intenta registrar forma parte de la lista negra de jugadores con ludopatia.</p>
+</li>
+<li class="data-line-50">
+<p>REG.2.2 El usuario tiene menos de 18 años.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph data-line-53">
+<p>AUTENTICACIÓN</p>
+</div>
+<div class="ulist data-line-55">
+<ul>
+<li class="data-line-55">
+<p>AUT.1. El usuario registrado no autenticado podrá iniciar sesión en el sistema con sus credenciales de usuario:</p>
+<div class="ulist data-line-57">
+<ul>
+<li class="data-line-57">
+<p>AUT.1.1 Correo electrónico.</p>
+</li>
+<li class="data-line-59">
+<p>AUT.1.2 Contraseña.</p>
+</li>
+<li class="data-line-61">
+<p>AUT.1.3 El sistema completará el proceso de inicio de sesión una vez comprobado que los datos proporcionados coincidan con los datos de registro REG.1 .</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph data-line-63">
+<p>FUNCIONES DE USUARIO ANONIMO</p>
+</div>
+<div class="ulist data-line-65">
+<ul>
+<li class="data-line-65">
+<p>UANO.1 El sistema permitirá al usuario sin cuenta realizar las siguientes funciones(usuario anónimo):</p>
+<div class="ulist data-line-66">
+<ul>
+<li class="data-line-66">
+<p>UANO.1.1 Ver las estadiísticas de sorteos pasados.</p>
+</li>
+<li class="data-line-67">
+<p>UANO.1.2 Si dispone de cuenta usuario, podrá iniciar sesión.</p>
+</li>
+<li class="data-line-68">
+<p>UANO.1.3 Podrá consultar los resultados:</p>
+<div class="ulist data-line-69">
+<ul>
+<li class="data-line-69">
+<p>UANO.1.3.1 Los resultados del último sorteo.</p>
+</li>
+<li class="data-line-70">
+<p>UANO.1.3.2 Los resultados en un intervalo de tiempo especificado.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li class="data-line-72">
+<p>UANO.2 El sistema no permitirá al usuario sin cuenta realizar las siguientes funciones(usuario anónimo):</p>
+<div class="ulist data-line-73">
+<ul>
+<li class="data-line-73">
+<p>UANO.2.1 El usuario anónimo no podrá realizar ningún tipo de apuesta.</p>
+</li>
+<li class="data-line-74">
+<p>UANO.2.2 El usuario anónimo no registrado podrá registrarse.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph data-line-78">
+<p>FUNCIONES DE USUARIO AUTENTICADO</p>
+</div>
+<div class="ulist data-line-80">
+<ul>
+<li class="data-line-80">
+<p>UAUT.1 El usuario registrado podrá configurar los datos de su perfil:</p>
+<div class="ulist data-line-82">
+<ul>
+<li class="data-line-82">
+<p>UAUT.1.1 Teléfono.</p>
+</li>
+<li class="data-line-84">
+<p>UAUT.1.2 Correo electrónico.</p>
+</li>
+<li class="data-line-86">
+<p>UAUT.1.3 Método de pago.</p>
+</li>
+<li class="data-line-88">
+<p>UAUT.1.4 Género.</p>
+</li>
+<li class="data-line-90">
+<p>UAUT.1.5 Dirección de domicilio.</p>
+</li>
+<li class="data-line-92">
+<p>UAUT.1.6 Residencia fiscal.</p>
+</li>
+<li class="data-line-94">
+<p>UAUT.1.7 Idioma preferente.</p>
+</li>
+<li class="data-line-96">
+<p>UAUT.1.8 Pregunta de seguridad.</p>
+</li>
+<li class="data-line-98">
+<p>UAUT.1.9 Respuesta a la pregunta de seguridad.</p>
+</li>
+<li class="data-line-100">
+<p>UAUT.1.10 Contraseña</p>
+</li>
+</ul>
+</div>
+</li>
+<li class="data-line-102">
+<p>UAUT.2 El usuario autenticado podrá comprobar el historial de resultados de sorteos pasados:</p>
+<div class="ulist data-line-103">
+<ul>
+<li class="data-line-103">
+<p>UAUT.2.1 Cada resultado muestra la fecha del sorteo.</p>
+</li>
+<li class="data-line-104">
+<p>UAUT.2.2 Cada resultado muestra el reintegro del sorteo.</p>
+</li>
+<li class="data-line-105">
+<p>UAUT.2.3 Cada resultado muestra el número complementario del sorteo.</p>
+</li>
+<li class="data-line-106">
+<p>UAUT.2.4 Cada resultado muestra los siguientes datos relacionados al joker:</p>
+</li>
+<li class="data-line-107">
+<p>UAUT.2.4.1 El número del joker.</p>
+</li>
+<li class="data-line-108">
+<p>UAUT.2.4.2 Las categorías del joker.</p>
+</li>
+<li class="data-line-109">
+<p>UAUT.2.5 Cada resultado muestra las estadísticas del sorteo.</p>
+</li>
+<li class="data-line-110">
+<p>UAUT.2.6 Cada resultado muestra la recaudación total del sorteo.</p>
+</li>
+</ul>
+</div>
+</li>
+<li class="data-line-112">
+<p>UAUT.3 El usuario autenticado podrá darse de baja, eliminando su cuenta de usuario del sistema IRBET.</p>
+</li>
+<li class="data-line-114">
+<p>UAUT.4 El usuario autenticado podrá consultar en relación a sus apuestas:</p>
+<div class="ulist data-line-115">
+<ul>
+<li class="data-line-115">
+<p>UAUT.4.1 Si sus apuestas son ganadoras.</p>
+</li>
+<li class="data-line-116">
+<p>UAUT.4.2 Si son ganadoras, el importe del premio.</p>
+</li>
+<li class="data-line-117">
+<p>UAUT.4.3 Los datos del sorteo especificados en UAUT.2.</p>
+</li>
+</ul>
+</div>
+</li>
+<li class="data-line-119">
+<p>UAUT.5 El usuario podrá escoger una de las diferentes apuestas disponibles para ser rellenadas:</p>
+<div class="ulist data-line-120">
+<ul>
+<li class="data-line-120">
+<p>UAUT.5.1 Sorteo semanal.</p>
+</li>
+<li class="data-line-121">
+<p>UAUT 5.2 Sorteo diario.</p>
+</li>
+</ul>
+</div>
+</li>
+<li class="data-line-123">
+<p>UAUT.6 El sistema deberá al usuario rellenar la apuesta seleccionada en UAUT.5:</p>
+<div class="ulist data-line-124">
+<ul>
+<li class="data-line-124">
+<p>UAUT.6.1 El sistema permitirá realizar apuestas de forma similar a las hechas en un punto de venta físico:</p>
+<div class="ulist data-line-125">
+<ul>
+<li class="data-line-125">
+<p>UAUT.6.1.1 El sistema permitirá apuestas simples:</p>
+<div class="ulist data-line-126">
+<ul>
+<li class="data-line-126">
+<p>UAUT.6.1.1.1 Se podrán realizar hasta 8 apuestas.</p>
+</li>
+<li class="data-line-127">
+<p>UAUT.6.1.1.2 Se podrán elegir hasta 6 números por apuesta.</p>
+</li>
+<li class="data-line-128">
+<p>UAUT.6.1.1.3 Se podrá añadir un reintegro a la apuesta.</p>
+</li>
+<li class="data-line-129">
+<p>UAUT.6.1.1.4 Se permitirá la rellenar la apuesta con número generados de forma aleatoria.</p>
+</li>
+</ul>
+</div>
+</li>
+<li class="data-line-130">
+<p>UAUT.6.1.2 El sistema permitirá apuestas compuestas:</p>
+<div class="ulist data-line-131">
+<ul>
+<li class="data-line-131">
+<p>UAUT.6.1.2.1 Se podrán realizar hasta 1 apuestas.</p>
+</li>
+<li class="data-line-132">
+<p>UAUT.6.1.2.2 Se podrán elegir hasta 5 números por apuesta, hasta un máximo de 11.</p>
+</li>
+<li class="data-line-133">
+<p>UAUT.6.1.2.3 Se podrá añadir un reintegro a la apuesta.</p>
+</li>
+<li class="data-line-134">
+<p>UAUT.6.1.2.4 Se permitirá la rellenar la apuesta con número generados de forma aleatoria de forma similar a UAUT.6.1.4 .</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li class="data-line-135">
+<p>UAUT.6.2 El sistema ofrecerá la posibilidad de añadir un Joker a la apuesta por PRECIO_JOKER euros.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph data-line-138">
+<p>FUNCIONES DE SUPERUSUARIO</p>
+</div>
+<div class="ulist data-line-140">
+<ul>
+<li class="data-line-140">
+<p>SRU.1 El sistema deberá proveer un superusuario del sistema para los empleados de SELAE</p>
+</li>
+<li class="data-line-142">
+<p>SRU.2 El sistema permitirá al superusuario realizar las siguientes acciones:</p>
+<div class="ulist data-line-143">
+<ul>
+<li class="data-line-143">
+<p>SRU.2.1 Respecto a cuentas de usuarios registrados:</p>
+<div class="ulist data-line-144">
+<ul>
+<li class="data-line-144">
+<p>SRU.2.1.1 Ver su estado.</p>
+</li>
+<li class="data-line-145">
+<p>SRU.2.1.2 Cambiar su informacion.</p>
+</li>
+<li class="data-line-146">
+<p>SRU.2.1.3 Bloquearla la cuenta.</p>
+</li>
+</ul>
+</div>
+</li>
+<li class="data-line-147">
+<p>SRU.2.2 Consultar información relativa a:</p>
+<div class="ulist data-line-148">
+<ul>
+<li class="data-line-148">
+<p>SRU.2.2.1 Las estadisticas de los sorteos.</p>
+</li>
+<li class="data-line-149">
+<p>SRU.2.2.2 Los proximos sorteos.</p>
+</li>
+<li class="data-line-150">
+<p>SRU.2.2.3 Los resultados de sorteos ya realizados.</p>
+</li>
+<li class="data-line-151">
+<p>SRU.2.2.4 Los ganadores de los sorteos.</p>
+</li>
+<li class="data-line-152">
+<p>SRU.2.2.5 Los boletos vendidos de un sorteo.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph data-line-154">
+<p>GESTION DE APUESTAS</p>
+</div>
+<div class="ulist data-line-156">
+<ul>
+<li class="data-line-156">
+<p>RGA.1 El Sistema deberá generar un resguardo tras la compra de un boleto, con el mismo formato que los resguardos obtenidos de puntos de venta físicos e incluyendo los siguientes datos:</p>
+<div class="ulist data-line-157">
+<ul>
+<li class="data-line-157">
+<p>RGA.1.1 El resguardo digital deberá mostrar el logo del sorteo.</p>
+</li>
+<li class="data-line-158">
+<p>RGA.1.2 El resguardo digital deberá mostrar la combinación seleccionada por el usuario.</p>
+</li>
+<li class="data-line-159">
+<p>RGA.1.3 El resguardo digital deberá mostrar el valor del reintegro.</p>
+</li>
+<li class="data-line-160">
+<p>RGA.1.4 El resguardo digital deberá mostrar el valor de la apuesta.</p>
+</li>
+<li class="data-line-161">
+<p>RGA.1.5 El resguardo digital deberá mostrar la fecha de compra del boleto.</p>
+</li>
+</ul>
+</div>
+</li>
+<li class="data-line-163">
+<p>RGA.2 El sistema notificará a los ganadores del sorteo:</p>
+<div class="ulist data-line-164">
+<ul>
+<li class="data-line-164">
+<p>RGA.2.1 Si el usuario tiene su teléfono registrado, a través de SMS.</p>
+</li>
+<li class="data-line-165">
+<p>RGA2.2 En caso de que no se cumpla RGA2.1, a través de correo electrónico.</p>
+</li>
+</ul>
+</div>
+</li>
+<li class="data-line-167">
+<p>RGA.3 El sistema deberá de utilizar los fondos del monedero para las transacciones relacionadas a las apuestas:</p>
+<div class="ulist data-line-168">
+<ul>
+<li class="data-line-168">
+<p>RGA.3.1 Si el usuario no dispone de fondos se notificará al usuario a través de sus métodos de contacto.</p>
+</li>
+<li class="data-line-169">
+<p>RGA.3.2 Si el usuario dispone de fondos se procederá al juego.</p>
+</li>
+</ul>
+</div>
+</li>
+<li class="data-line-171">
+<p>RGA.4. El usuario podrá solicitar un resguado para imprimir de los sorteos en los que participe, ó haya participado en un plazo de 20 días después del sorteo.</p>
+</li>
+<li class="data-line-174">
+<p>RGA.5 El sistema deberá de ingresar la cuantía de los premios a los ganadores del sorteo en:</p>
+<div class="ulist data-line-175">
+<ul>
+<li class="data-line-175">
+<p>RGA.5.1 El monedero virtual (LOTOBOLSA) del usuario si la cantidad es menor a CUANTIA_MIN_BANCO euros.</p>
+<div class="ulist data-line-176">
+<ul>
+<li class="data-line-176">
+<p>RGA.5.1.1 Respecto a RGM.2 la cuantia que exceda CUANTIA_MAX_LOTO se trasnferirá directamente a la cuenta bancaria del ganador.</p>
+</li>
+</ul>
+</div>
+</li>
+<li class="data-line-177">
+<p>RGA.5.2 La cuenta bancaria del usuario si la cantidad es mayor a CUANTIA_MIN_BANCO euros y menor de CUANTIA_MAX_BANCO euros.</p>
+</li>
+</ul>
+</div>
+</li>
+<li class="data-line-179">
+<p>RGA.6 Si el ganador no tiene cuenta bancaria registrada en su cuenta y gana un premio que sobrepase CUANTIA_MAX_LOTO:</p>
+<div class="ulist data-line-180">
+<ul>
+<li class="data-line-180">
+<p>RGA.6.1 No podra realizar apuestas hasta que que cumplan las siguientes condiciones:</p>
+<div class="ulist data-line-181">
+<ul>
+<li class="data-line-181">
+<p>RGA.6.1.1 Registre una cuenta bancaria.</p>
+</li>
+<li class="data-line-182">
+<p>RGA.6.1.2 Se descargue el exceso de dinero de la lotobolsa.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph data-line-185">
+<p>GESTION DE MONEDERO</p>
+</div>
+<div class="ulist data-line-187">
+<ul>
+<li class="data-line-187">
+<p>RGM.1 : El sistema permitirá al usuario ingresar dinero en su monedero digital (Lotobolsa) de IRBET mediante:</p>
+<div class="ulist data-line-188">
+<ul>
+<li class="data-line-188">
+<p>RGM.1.1 Tarjetas de crédito/débito.</p>
+</li>
+<li class="data-line-189">
+<p>RGM.1.2 Pasarelas de pago:</p>
+<div class="ulist data-line-190">
+<ul>
+<li class="data-line-190">
+<p>RGM.1.2.1 PayPal.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li class="data-line-192">
+<p>RGM.2 : El sistema no permitirá tener un importe mayor a CUANTIA_MAX_LOTO en la Lotobolsa.</p>
+</li>
+<li class="data-line-194">
+<p>RGM.3 : El sistema permitirá al usuario consultar el valor de su monedero.</p>
+</li>
+<li class="data-line-196">
+<p>RGM.4 : El sistema permitirá al usuario retirar sus fondos del monedero:</p>
+<div class="ulist data-line-197">
+<ul>
+<li class="data-line-197">
+<p>RGM.4.1 : El sistema deberá de comprobar que el usuario tenga fondos en su monedero.</p>
+</li>
+</ul>
+</div>
+</li>
+<li class="data-line-199">
+<p>RGM.5 El sistema mantendrá un registro de los movimientos de dinero que sufre la lotobolsa entre los que se encuentran:</p>
+<div class="ulist data-line-200">
+<ul>
+<li class="data-line-200">
+<p>RGM.5.1 Transferencias.</p>
+</li>
+<li class="data-line-201">
+<p>RGM.5.2 Pagos de apuestas.</p>
+</li>
+<li class="data-line-202">
+<p>RGM.5.3 Cobro de premios.</p>
+</li>
+<li class="data-line-203">
+<p>RGM.5.4 Retiradas de dinero(Descargas).</p>
+</li>
+</ul>
+</div>
+</li>
+<li class="data-line-205">
+<p>RGM.6 El sistema deberá dar la opcion al usuario autenticado para que vea el contenido de RGM.5.</p>
+</li>
+<li class="data-line-207">
+<p>RGM.7 El sistema deberá permitir al usuario autenticado asociar una cuenta bancaria a su lotobolsa.</p>
+</li>
+<li class="data-line-209">
+<p>RGM.8 El sistema deberá permitir al usuario autenticado establecer importes maximos de:</p>
+<div class="ulist data-line-210">
+<ul>
+<li class="data-line-210">
+<p>RGM.8.1 Gasto semanal:</p>
+<div class="ulist data-line-211">
+<ul>
+<li class="data-line-211">
+<p>RGM.8.1.1 CUANTIA_MAX_GASTO_SEMANAL_DEFECTO por defecto</p>
+</li>
+</ul>
+</div>
+</li>
+<li class="data-line-212">
+<p>RGM.8.2 Cantidad máxima que se permite cargar en la lotobolsa:</p>
+<div class="ulist data-line-213">
+<ul>
+<li class="data-line-213">
+<p>RGM.8.2.1 Diaro</p>
+<div class="ulist data-line-214">
+<ul>
+<li class="data-line-214">
+<p>RGM.8.2.1.1 CUANTIA_MAX_CARGADIARIA por defecto.</p>
+</li>
+</ul>
+</div>
+</li>
+<li class="data-line-215">
+<p>RGM.8.2.2 Semanal</p>
+<div class="ulist data-line-216">
+<ul>
+<li class="data-line-216">
+<p>RGM.8.2.2.1 CUANTIA_MAX_CARGASEMANAL por defecto.</p>
+</li>
+</ul>
+</div>
+</li>
+<li class="data-line-217">
+<p>RGM.8.2.3 Mensual</p>
+<div class="ulist data-line-218">
+<ul>
+<li class="data-line-218">
+<p>RGM.8.2.3.1 CUANTIA_MAX_CARGAMENSUAL por defecto.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li class="data-line-220">
+<p>RGM.9 El sistema debera permitir al usuario aumentar los limites establecidos en RGM.8.1 y RGM.8.2 en las siguientes cantidades:</p>
+<div class="ulist data-line-221">
+<ul>
+<li class="data-line-221">
+<p>RGM.9.1 CUANTIA_MAX_GASTO_SEMANAL como máximo en el caso RGM.8.1.1.</p>
+</li>
+<li class="data-line-222">
+<p>RGM.9.1 Sin limite conocido en RGM.8.2.1.1, RGM.8.2.2.1, RGM.8.2.3.1.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph data-line-224">
+<p>LISTA NO FUNCIONALES</p>
+</div>
+<div class="paragraph data-line-226">
+<p>INTERFACES DE USUARIO</p>
+</div>
+<div class="ulist data-line-228">
+<ul>
+<li class="data-line-228">
+<p>RUI.1 El sistema deberá estar internacionalizado para los siguientes idiomas:</p>
+<div class="ulist data-line-229">
+<ul>
+<li class="data-line-229">
+<p>RUI.1.1 Castellano.</p>
+</li>
+<li class="data-line-230">
+<p>RUI.1.2 Catalán.</p>
+</li>
+<li class="data-line-231">
+<p>RUI.1.3 Inglés.</p>
+</li>
+<li class="data-line-232">
+<p>RUI.1.4 Euskera.</p>
+</li>
+<li class="data-line-233">
+<p>RUI.1.5 Gallego.</p>
+</li>
+<li class="data-line-234">
+<p>RUI.1.6 Valenciano.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph data-line-236">
+<p>HARDWARE</p>
+</div>
+<div class="paragraph data-line-238">
+<p>RHW.1 //base de datos</p>
+</div>
+<div class="paragraph data-line-240">
+<p>COMUNICACION EXTERIOR</p>
+</div>
+<div class="ulist data-line-242">
+<ul>
+<li class="data-line-242">
+<p>RCOM.1 El sistema se comunicará con el servidor de hosting.</p>
+</li>
+<li class="data-line-244">
+<p>RCOM.2 El sistema se comunicará con el servidor de dominio.</p>
+</li>
+<li class="data-line-246">
+<p>RCOM.3 El sistema se comunicará con APIs:</p>
+<div class="ulist data-line-247">
+<ul>
+<li class="data-line-247">
+<p>RCOM.3.1 GoogleMaps API, para la localización de puntos físicos.</p>
+</li>
+<li class="data-line-248">
+<p>RCOM.3.2 Gmail API, para enviar correos desde a los usuarios.</p>
+</li>
+<li class="data-line-249">
+<p>RCOM.3.3 Google Analytics, para la recopilación de estadísticas y cookies.</p>
+</li>
+<li class="data-line-250">
+<p>RCOM.3.4 El sistema dispondrá de un acceso directo a redes sociales:</p>
+<div class="ulist data-line-251">
+<ul>
+<li class="data-line-251">
+<p>RCOM.3.4.1 Twitter.</p>
+</li>
+<li class="data-line-252">
+<p>RCOM.3.4.2 Facebook.</p>
+</li>
+<li class="data-line-253">
+<p>RCOM.3.4.3 Youtube.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph data-line-257">
+<p>NORMATIVAS Y LEYES</p>
+</div>
+<div class="ulist data-line-259">
+<ul>
+<li class="data-line-259">
+<p>RNORM.1 El sitio Web se debe ajustar a las normas establecidas por la LSSICE, Ley 34/2002</p>
+<div class="ulist data-line-261">
+<ul>
+<li class="data-line-261">
+<p>RNORM.1.1 Se incluirá un Aviso Legal, en el que se incluirán los datos básicos del negocio (Artículo 10)</p>
+<div class="ulist data-line-263">
+<ul>
+<li class="data-line-263">
+<p>RNORM.1.1.1 Propietario del sitio (nombre o denominación social).</p>
+</li>
+<li class="data-line-265">
+<p>RNORM.1.1.2 Datos de contacto: domicilio, dirección de correo electrónico, teléfono o número de fax.</p>
+</li>
+<li class="data-line-267">
+<p>RNORM.1.1.3 Número de Identificación Fiscal.</p>
+</li>
+<li class="data-line-269">
+<p>RNORM.1.1.4 Si está registrado en el Registro mercantil indicar el número de tomo, libro, folio y hoja.</p>
+</li>
+<li class="data-line-271">
+<p>RNORM.1.1.5 Si se encuentra registrado en otro registro distinto público del Registro Mercantil, indicar el número de inscripción que le corresponda</p>
+</li>
+<li class="data-line-273">
+<p>RNORM.1.1.6 Si necesita una autorización administrativa previa, incluir los datos de la autorización y el órgano competente encargado de la supervisión.</p>
+</li>
+<li class="data-line-275">
+<p>RNORM.1.1.7 Si se encuentra adherido a algún código de conducta, indicarlo y facilitar el acceso de forma electrónica a dicho código de conducta.</p>
+</li>
+<li class="data-line-277">
+<p>RNORM.1.1.8 Si ejerce una actividad regulada, deberá indicar:</p>
+<div class="ulist data-line-279">
+<ul>
+<li class="data-line-279">
+<p>RNORM.1.1.8.1 Datos del Colegio profesional y número de colegiado.</p>
+</li>
+<li class="data-line-281">
+<p>RNORM.1.1.8.2 Título académico oficial o profesional.</p>
+</li>
+<li class="data-line-283">
+<p>RNORM.1.1.8.3 Dónde se expidió y si procede, su homologación.</p>
+</li>
+<li class="data-line-285">
+<p>RNORM.1.1.8.4 Normas profesionales que debe seguir, indicando cómo poder acceder a dicha información.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li class="data-line-287">
+<p>RNORM.1.2 Se debe facilitar a cualquier usuario el acceso al Aviso Legal (Artículo 10)</p>
+</li>
+<li class="data-line-289">
+<p>RNORM.1.3 Si el negocio vende artículos, deberá informar sobre (Artículo 10):</p>
+<div class="ulist data-line-291">
+<ul>
+<li class="data-line-291">
+<p>RNORM.1.3.1 El precio de los productos, indicando si se incluye o no los impuestos.</p>
+</li>
+<li class="data-line-293">
+<p>RNORM.1.3.2 Los gastos de envío, en el caso de que los haya.</p>
+</li>
+<li class="data-line-295">
+<p>RNORM.1.3.3 Los plazos y políticas de entrega.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="sect2 data-line-298">
+<h3 id="_diagrama_de_contexto">DIAGRAMA DE CONTEXTO</h3>
+<div class="paragraph data-line-300">
+<p><span class="image"><img src="contexto.png" alt="Diagrama de Contexto" width="640" height="480"></span></p>
+</div>
+</div>
+<div class="sect2 data-line-302">
+<h3 id="_diagrama_de_caso_de_uso_del_monedero">DIAGRAMA DE CASO DE USO DEL MONEDERO</h3>
+<div class="paragraph data-line-304">
+<p><span class="image"><img src="casouso_monedero.png" alt="Diagrama de Contexto" width="640" height="480"></span></p>
+</div>
+</div>
+<div class="sect2 data-line-306">
+<h3 id="_diagrama_de_caso_de_uso_de_la_gestión_de_sorteos_selae">DIAGRAMA DE CASO DE USO DE LA GESTIÓN DE SORTEOS (SELAE)</h3>
+<div class="paragraph data-line-308">
+<p><span class="image"><img src="casouso_sorteos.png" alt="Diagrama de Contexto" width="640" height="480"></span></p>
+</div>
+</div>
+<div class="sect2 data-line-310">
+<h3 id="_diagrama_de_caso_de_uso_jugar_a_la_lotería_usuario_jugador">DIAGRAMA DE CASO DE USO JUGAR A LA LOTERÍA (USUARIO JUGADOR)</h3>
+<div class="paragraph data-line-312">
+<p><span class="image"><img src="casouso_jugar.png" alt="Diagrama de Contexto" width="640" height="480"></span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1 data-line-315">
+<h2 id="_futura_tabla">Futura tabla</h2>
+<div class="sectionbody">
+<div class="literalblock data-line-316">
+<div class="content">
+<pre>CUANTIA_MIN_BANCO -&gt; 2000
+CUANTIA_MAX_BANCO -&gt; 40000
+CUANTIA_MAX_LOTO -&gt; 400
+CUANTIA_MAX_GASTO_SEMANAL_DEFECTO -&gt;600
+CUANTIA_MAX_GASTO_SEMANAL -&gt;2000
+CUANTIA_MAX_CARGADIARIA -&gt; 400
+CUANTIA_MAX_CARGASEMANAL -&gt; 1500
+CUANTIA_MAX_CARGAMENSUAL -&gt; 3000</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2021-10-24 20:10:12 +0200
+</div>
+</div>
+</body>
+</html>

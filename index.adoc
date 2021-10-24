@@ -27,3 +27,7 @@ include::lrp1.adoc[]
 <<<<
 // 2. Lista de requisitios preliminar v2.0
 include::lrp2.adoc[]
+
+<<<<
+// 3. Lista de requisitios preliminar v3.0
+include::lrp3.adoc[]
