@@ -1,0 +1,24 @@
+== ANEXO DIAGRAMAS
+
+=== DIAGRAMA DE CONTEXTO
+
+image:contexto.png[alt=Diagrama de Contexto,width=640,height=480]
+
+=== DIAGRAMA DE CASO DE USO DEL MONEDERO
+
+image:casouso_monedero.png[alt=Diagrama de Contexto,width=640,height=480]
+
+=== DIAGRAMA DE CASO DE USO DE LA GESTIÓN DE SORTEOS (SELAE)
+
+image:casouso_sorteos.png[alt=Diagrama de Contexto,width=640,height=480]
+
+=== DIAGRAMA DE CASO DE USO JUGAR A LA LOTERÍA (USUARIO JUGADOR)
+
+image:casouso_jugar.png[alt=Diagrama de Contexto,width=640,height=480]
+
+
+=== DIAGRAMA DE ESTADOS DE PERFIL DE USUARIO
+
+image:estadosperfil.png[alt=Estados perfil de usuario]
+
+=== DIAGRAMA DE ESTADOS DE GESTIÓN DE SORTEOS

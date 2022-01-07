@@ -1,0 +1,333 @@
+== LISTA DE REQUISITOS INICIAL V5
+
+REGISTRO DE USUARIO
+
+* REG.1 El sistema permitirá al usuario no registrado crear una cuenta de usuario en el sistema IRBET proporcionando sus datos personales: 
+
+** REG.1.1 DNI/NIF o NIE
+** REG.1.2 Nombre 
+** REG.1.3 Apellidos 
+** REG.1.4 Correo Electrónico 
+** REG.1.5 Contraseña. 
+** REG.1.6 Confirmación de la contraseña
+** REG.1.7 Dirección de domicilio
+** REG.1.8 Fecha de nacimiento
+** REG.1.9 Género
+*** REG.1.9.1 Hombre
+*** REG.1.9.2 Mujer
+*** REG.1.9.3 Otro
+** REG.1.10 Pregunta de seguridad
+** REG.1.11 Respuesta secreta a la pregunta de seguridad
+** REG.1.12 Elegir punto de venta presencial:
+*** REG.1.12.1 Identificador de 5 cifras 
+** REG.1.13 Servicios de los que quiere disponer:
+*** REG.1.13.1 Comunicación de próximos sorteos
+*** REG.1.13.2 Información comercial sobre nuevos productos
+*** REG.1.13.3 Encuestas por correo electrónico
+*** REG.1.13.4 Información comercial sobre nuevos productos
+
+** REG.1.14 El sistema completará el proceso de alta de usuario:
+*** REG.1.14.1 Dadas las condiciones:
+**** REG.1.14.1.1 Los datos de registro introducidos sean correctos
+**** REG.1.14.1.2 El usuario no exista en la base de datos
+*** REG.1.14.2 El sistema tras comprobar que los datos correctos se procederá al proceso de autenticación, AUT.1.
+
+* REG.2 El sistema no permitirá el registro de un usuario que haya rellenado los datos relativos a REG.1 si:
+** REG.2.1 El usuario que se intenta registrar forma parte de la lista negra de jugadores con ludopatia.
+** REG.2.2 El usuario tiene menos de 18 años.
+** REG.2.3 Si el NIF/NIE del usuario es verificado como inválido.
+
+
+AUTENTICACIÓN
+
+* AUT.1. El usuario registrado no autenticado podrá iniciar sesión en el sistema con sus credenciales de usuario: 
+** AUT.1.1 Correo electrónico. 
+** AUT.1.2 Contraseña. 
+** AUT.1.3 El sistema completará el proceso de inicio de sesión una vez comprobado que los datos proporcionados coincidan con los datos de registro REG.1 .
+
+FUNCIONES DE USUARIO ANONIMO
+
+* UANO.1 El sistema permitirá al usuario sin cuenta realizar las siguientes funciones(usuario anónimo):
+** UANO.1.1 Ver las estadiísticas de sorteos pasados.
+** UANO.1.2 Si dispone de cuenta usuario, podrá iniciar sesión.
+** UANO.1.3 Podrá consultar los resultados:
+*** UANO.1.3.1 Los resultados del último sorteo.
+*** UANO.1.3.2 Los resultados en un intervalo de tiempo especificado.
+
+* UANO.2 El sistema no permitirá al usuario sin cuenta realizar las siguientes funciones(usuario anónimo):
+** UANO.2.1 El usuario anónimo no podrá realizar ningún tipo de apuesta.
+** UANO.2.2 El usuario anónimo no registrado podrá registrarse.
+
+
+
+FUNCIONES DE USUARIO AUTENTICADO
+
+* UAUT.1 El usuario registrado podrá configurar los datos de su perfil: 
+** UAUT.1.1 Teléfono. 
+** UAUT.1.2 Correo electrónico. 
+** UAUT.1.3 Método de pago. 
+** UAUT.1.4 Género.
+** UAUT.1.5 Dirección de domicilio.
+** UAUT.1.6 Residencia fiscal.
+** UAUT.1.7 Idioma preferente.
+** UAUT.1.8 Pregunta de seguridad.
+** UAUT.1.9 Respuesta a la pregunta de seguridad.
+** UAUT.1.10 Contraseña
+
+* UAUT.2 El usuario autenticado podrá comprobar el historial de resultados de sorteos pasados:
+** UAUT.2.1 Cada resultado muestra la fecha del sorteo.
+** UAUT.2.2 Cada resultado muestra el reintegro del sorteo.
+** UAUT.2.3 Cada resultado muestra el número complementario del sorteo.
+** UAUT.2.4 Cada resultado muestra los siguientes datos relacionados al joker:
+** UAUT.2.4.1 El número del joker.
+** UAUT.2.4.2 Las categorías del joker.
+** UAUT.2.5 Cada resultado muestra las estadísticas del sorteo.
+** UAUT.2.6 Cada resultado muestra la recaudación total del sorteo.
+
+* UAUT.3 El usuario autenticado podrá darse de baja, eliminando su cuenta de usuario del sistema IRBET. 
+
+* UAUT.4 El usuario autenticado podrá consultar en relación a sus apuestas:
+** UAUT.4.1 Si sus apuestas son ganadoras.
+** UAUT.4.2 Si son ganadoras, el importe del premio.
+** UAUT.4.3 Los datos del sorteo especificados en UAUT.2. 
+
+* UAUT.5 El usuario podrá escoger una de las diferentes apuestas disponibles para ser rellenadas: 
+** UAUT.5.1 Sorteo semanal.
+** UAUT 5.2 Sorteo diario.
+
+* UAUT.6 El sistema deberá al usuario rellenar la apuesta seleccionada en UAUT.5:
+** UAUT.6.1 El sistema permitirá realizar apuestas de forma similar a las hechas en un punto de venta físico:
+*** UAUT.6.1.1 El sistema permitirá apuestas simples:
+**** UAUT.6.1.1.1 Se podrán realizar hasta 8 apuestas.
+**** UAUT.6.1.1.2 Se podrán elegir hasta 6 números por apuesta.
+**** UAUT.6.1.1.3 Se podrá añadir un reintegro a la apuesta.
+**** UAUT.6.1.1.4 Se permitirá la rellenar la apuesta con número generados de forma aleatoria.
+**** UAUT.6.1.1.5 La apuesta sencilla tendrá un coste de 1€ (IVA incluido).
+*** UAUT.6.1.2 El sistema permitirá apuestas compuestas:
+**** UAUT.6.1.2.1 Se podrán realizar hasta 1 apuestas.
+**** UAUT.6.1.2.2 Se podrán elegir como mínimo 5 números por apuesta, hasta un máximo de 11.
+**** UAUT.6.1.2.3 Se podrá añadir un reintegro a la apuesta.
+**** UAUT.6.1.2.4 Se permitirá la rellenar la apuesta con número generados de forma aleatoria de forma similar a UAUT.6.1.4 .
+**** UAUT.6.1.2.5 Los números jugados están en relación directa con el número de combinaciones y su importe.
+***** UAUT.6.1.2.5.1 5 números.
+****** UAUT.6.1.2.5.1.1 44 combinaciones (apuestas).
+****** UAUT.6.1.2.5.1.2 Con un precio de 44*COSTE_APUESTA_SENCILLA € si la apuesta es diaria.
+****** UAUT.6.1.2.5.1.3 Con un precio de 44*2*COSTE_APUESTA_SENCILLA € si la apuesta es semanal.
+***** UAUT.6.1.2.5.2 7 números.
+****** UAUT.6.1.2.5.2.1 7 combinaciones (apuestas).
+****** UAUT.6.1.2.5.2.2 Con un precio de 7*COSTE_APUESTA_SENCILLA € si la apuesta es diaria.
+****** UAUT.6.1.2.5.2.3 Con un precio de 7*2*COSTE_APUESTA_SENCILLA € si la apuesta es semanal.
+***** UAUT.6.1.2.5.3 8 números.
+****** UAUT.6.1.2.5.3.1 28 combinaciones (apuestas).
+****** UAUT.6.1.2.5.3.2 Con un precio de 28*COSTE_APUESTA_SENCILLA € si la apuesta es diaria.
+****** UAUT.6.1.2.5.3.3 Con un precio de 28*2*COSTE_APUESTA_SENCILLA € si la apuesta es semanal.
+***** UAUT.6.1.2.5.4 9 números.
+****** UAUT.6.1.2.5.4.1 84 combinaciones (apuestas).
+****** UAUT.6.1.2.5.4.2 Con un precio de 84*COSTE_APUESTA_SENCILLA € si la apuesta es diaria.
+****** UAUT.6.1.2.5.4.3 Con un precio de 84*2*COSTE_APUESTA_SENCILLA € si la apuesta es semanal.
+***** UAUT.6.1.2.5.5 10 números.
+****** UAUT.6.1.2.5.5.1 210 combinaciones (apuestas).
+****** UAUT.6.1.2.5.5.2 Con un precio de 210*COSTE_APUESTA_SENCILLA € si la apuesta es diaria.
+****** UAUT.6.1.2.5.5.3 Con un precio de 210*2*COSTE_APUESTA_SENCILLA € si la apuesta es semanal.
+***** UAUT.6.1.2.5.6 11 números.
+****** UAUT.6.1.2.5.5.1 462 combinaciones (apuestas).
+****** UAUT.6.1.2.5.5.2 Con un precio de 462*COSTE_APUESTA_SENCILLA € si la apuesta es diaria.
+****** UAUT.6.1.2.5.5.3 Con un precio de 462*2*COSTE_APUESTA_SENCILLA € si la apuesta es semanal.
+** UAUT.6.2 El sistema ofrecerá la posibilidad de añadir un Joker a la apuesta por PRECIO_JOKER euros. 
+
+
+FUNCIONES DE SUPERUSUARIO
+
+* SRU.1 El sistema deberá proveer un superusuario del sistema para los empleados de SELAE
+
+* SRU.2 El sistema permitirá al superusuario realizar las siguientes acciones:
+** SRU.2.1 Respecto a cuentas de usuarios registrados:
+*** SRU.2.1.1 Ver su estado.
+*** SRU.2.1.2 Cambiar su informacion.
+*** SRU.2.1.3 Bloquearla la cuenta.
+** SRU.2.2 Consultar información relativa a:
+*** SRU.2.2.1 Las estadisticas de los sorteos.
+*** SRU.2.2.2 Los proximos sorteos.
+*** SRU.2.2.3 Los resultados de sorteos ya realizados.
+*** SRU.2.2.4 Los ganadores de los sorteos.
+*** SRU.2.2.5 Los boletos vendidos de un sorteo.
+** SRU.2.3 Respecto a sorteos:
+*** SRU.2.3.1 Crear sorteos.
+*** SRU.2.3.2 Abrir sorteos.
+*** SRU.2.3.3 Pausar sorteos.
+*** SRU.2.3.4 Cerrar sorteos.
+*** SRU.2.3.5 Modificar sorteos.
+*** SRU.2.3.6 Reanudar sorteos.
+*** SRU.2.3.7 Suspender sorteos.
+*** SRU.2.3.8 Realizar el escrutinio del sorteo.
+*** SRU.2.3.9 Publicar resultados del sorteo:
+**** SRU.2.3.9.1 Números ganadores del sorteo.
+**** SRU.2.3.9.2 Importe de los premios.
+*** SRU.2.3.10 Asignar horarios al sorteo:
+**** SRU.2.3.10.1 Horario de apertura.
+**** SRU.2.3.10.2 Horario de finalización.
+*** SRU.2.3.11 Generar informes con los datos especificados en RGI.1.
+
+GESTION DE APUESTAS
+
+* RGA.1 El Sistema deberá generar un resguardo tras la compra de un boleto, con el mismo formato que los resguardos obtenidos de puntos de venta físicos e incluyendo los siguientes datos:
+** RGA.1.1 El resguardo digital deberá mostrar el logo del sorteo.
+** RGA.1.2 El resguardo digital deberá mostrar la combinación seleccionada por el usuario.
+** RGA.1.3 El resguardo digital deberá mostrar el valor del reintegro.
+** RGA.1.4 El resguardo digital deberá mostrar el valor de la apuesta.
+** RGA.1.5 El resguardo digital deberá mostrar la fecha de compra del boleto. 
+
+* RGA.2 El sistema notificará a los ganadores del sorteo:
+** RGA.2.1 Si el usuario tiene su teléfono registrado, a través de SMS.
+** RGA2.2 En caso de que no se cumpla RGA2.1, a través de correo electrónico.
+
+* RGA.3 El sistema deberá de utilizar los fondos del monedero para las transacciones relacionadas a las apuestas: 
+** RGA.3.1 Si el usuario no dispone de fondos se notificará al usuario a través de sus métodos de contacto.
+** RGA.3.2 Si el usuario dispone de fondos se procederá al juego.
+
+* RGA.4. El usuario podrá solicitar un resguado para imprimir de los sorteos en los que participe, ó haya participado en un plazo de 20 días después del sorteo. 
+
+
+* RGA.5 El sistema deberá de ingresar la cuantía de los premios a los ganadores del sorteo en:
+** RGA.5.1 El monedero virtual (LOTOBOLSA) del usuario si la cantidad es menor a CUANTIA_MIN_BANCO euros.
+*** RGA.5.1.1 Respecto a RGM.2 la cuantia que exceda CUANTIA_MAX_LOTO se trasnferirá directamente a la cuenta bancaria del ganador.
+** RGA.5.2 La cuenta bancaria del usuario si la cantidad es mayor a CUANTIA_MIN_BANCO euros y menor de CUANTIA_MAX_BANCO euros.
+
+* RGA.6 Si el ganador no tiene cuenta bancaria registrada en su cuenta y gana un premio que sobrepase CUANTIA_MAX_LOTO:
+** RGA.6.1 No podra realizar apuestas hasta que que cumplan las siguientes condiciones:
+*** RGA.6.1.1 Registre una cuenta bancaria.
+*** RGA.6.1.2 Se descargue el exceso de dinero de la lotobolsa.
+
+
+GESTION DE MONEDERO
+
+* RGM.1 : El sistema permitirá al usuario ingresar dinero en su monedero digital (Lotobolsa) de IRBET mediante: 
+** RGM.1.1 Tarjetas de crédito/débito.
+** RGM.1.2 Pasarelas de pago: 
+*** RGM.1.2.1 PayPal. 
+
+* RGM.2 : El sistema no permitirá tener un importe mayor a CUANTIA_MAX_LOTO en la Lotobolsa.
+
+* RGM.3 : El sistema permitirá al usuario consultar el valor de su monedero.
+
+* RGM.4 : El sistema permitirá al usuario retirar sus fondos del monedero: 
+** RGM.4.1 : El sistema deberá de comprobar que el usuario tenga fondos en su monedero.
+
+* RGM.5 El sistema mantendrá un registro de los movimientos de dinero que sufre la lotobolsa entre los que se encuentran:
+** RGM.5.1 Transferencias.
+** RGM.5.2 Pagos de apuestas.
+** RGM.5.3 Cobro de premios.
+** RGM.5.4 Retiradas de dinero(Descargas).
+
+* RGM.6 El sistema deberá dar la opcion al usuario autenticado para que vea el contenido de RGM.5.
+
+* RGM.7 El sistema deberá permitir al usuario autenticado asociar una cuenta bancaria a su lotobolsa.
+
+* RGM.8 El sistema deberá permitir al usuario autenticado establecer importes maximos de:
+** RGM.8.1 Gasto semanal:
+*** RGM.8.1.1 CUANTIA_MAX_GASTO_SEMANAL_DEFECTO por defecto
+** RGM.8.2 Cantidad máxima que se permite cargar en la lotobolsa:
+*** RGM.8.2.1 Diaro
+**** RGM.8.2.1.1 CUANTIA_MAX_CARGADIARIA por defecto.
+*** RGM.8.2.2 Semanal
+**** RGM.8.2.2.1 CUANTIA_MAX_CARGASEMANAL por defecto.
+*** RGM.8.2.3 Mensual
+**** RGM.8.2.3.1 CUANTIA_MAX_CARGAMENSUAL por defecto.
+
+* RGM.9 El sistema debera permitir al usuario aumentar los limites establecidos en RGM.8.1 y RGM.8.2 en las siguientes cantidades: 
+** RGM.9.1 CUANTIA_MAX_GASTO_SEMANAL como máximo en el caso RGM.8.1.1.
+** RGM.9.1 Sin limite conocido en RGM.8.2.1.1, RGM.8.2.2.1, RGM.8.2.3.1.
+
+GENERACION INFORMES
+
+* RGI.1 El sistema deberá de enviar la siguiente información relativa a las ventas Online al sistema actual:
+** RGI.1.1 Datos relativos a la recaudación.
+** RGI.1.2 Datos del reparto de premios.
+** RGI.1.3 Datos relativos a la recaudación.
+** RGI.1.4 Datos del escrutinio.
+** RGI.1.5 Datos de estadísticas.
+
+PUBLICIDAD
+
+* RPUB.1 El sistema mostrará publicidad en la página que cumpla las condiciones de:
+** RPUB.1.1 La publicidad pertenece a los patrocinadores asociados.
+** RPUB.1.2 La publicidad no inclumple las leyes establecidas en RNORM.1.
+
+LISTA NO FUNCIONALES
+
+INTERFACES DE USUARIO
+
+* RUI.1 El sistema deberá estar internacionalizado para los siguientes idiomas:
+** RUI.1.1 Castellano.
+** RUI.1.2 Catalán.
+** RUI.1.3 Inglés.
+** RUI.1.4 Euskera.
+** RUI.1.5 Gallego.
+** RUI.1.6 Valenciano.
+
+HARDWARE
+
+* RHW.1 El sistema se comunicará con la bases de datos del sistema actual.
+** RHW.1.1 El sistema almacenará los siguientes datos:
+*** RHW.1.2.1 Usuarios.
+*** RHW.1.2.2 Apuestas.
+*** RHW.1.2.3 Sorteos.
+
+* RHW.2 El sistema usará un servidor de hosting para retransmitir los sorteos en directo. 
+
+COMUNICACION EXTERIOR
+
+* RCOM.1 El sistema se comunicará con el servidor de hosting.
+
+* RCOM.2 El sistema se comunicará con el servidor de dominio.
+
+* RCOM.3 El sistema se comunicará con APIs: 
+** RCOM.3.1 GoogleMaps API, para la localización de puntos físicos.
+** RCOM.3.2 Gmail API, para enviar correos desde a los usuarios.
+** RCOM.3.3 Google Analytics, para la recopilación de estadísticas y cookies.
+** RCOM.3.4 El sistema dispondrá de un acceso directo a redes sociales: 
+*** RCOM.3.4.1 Twitter.
+*** RCOM.3.4.2 Facebook.
+*** RCOM.3.4.3 Youtube.
+
+
+
+NORMATIVAS Y LEYES
+
+* RNORM.1 El sitio Web se debe ajustar a las normas establecidas por la LSSICE, Ley 34/2002 
+
+** RNORM.1.1 Se incluirá un Aviso Legal, en el que se incluirán los datos básicos del negocio (Artículo 10) 
+
+*** RNORM.1.1.1 Propietario del sitio (nombre o denominación social). 
+
+*** RNORM.1.1.2 Datos de contacto: domicilio, dirección de correo electrónico, teléfono o número de fax. 
+
+*** RNORM.1.1.3 Número de Identificación Fiscal. 
+
+*** RNORM.1.1.4 Si está registrado en el Registro mercantil indicar el número de tomo, libro, folio y hoja. 
+
+*** RNORM.1.1.5 Si se encuentra registrado en otro registro distinto público del Registro Mercantil, indicar el número de inscripción que le corresponda 
+
+*** RNORM.1.1.6 Si necesita una autorización administrativa previa, incluir los datos de la autorización y el órgano competente encargado de la supervisión. 
+
+*** RNORM.1.1.7 Si se encuentra adherido a algún código de conducta, indicarlo y facilitar el acceso de forma electrónica a dicho código de conducta. 
+
+*** RNORM.1.1.8 Si ejerce una actividad regulada, deberá indicar: 
+
+**** RNORM.1.1.8.1 Datos del Colegio profesional y número de colegiado. 
+
+**** RNORM.1.1.8.2 Título académico oficial o profesional. 
+
+**** RNORM.1.1.8.3 Dónde se expidió y si procede, su homologación. 
+
+**** RNORM.1.1.8.4 Normas profesionales que debe seguir, indicando cómo poder acceder a dicha información. 
+
+** RNORM.1.2 Se debe facilitar a cualquier usuario el acceso al Aviso Legal (Artículo 10) 
+
+** RNORM.1.3 Si el negocio vende artículos, deberá informar sobre (Artículo 10):  
+
+*** RNORM.1.3.1 El precio de los productos, indicando si se incluye o no los impuestos. 
+
+*** RNORM.1.3.2 Los gastos de envío, en el caso de que los haya. 
+
+*** RNORM.1.3.3 Los plazos y políticas de entrega. 

@@ -31,3 +31,19 @@ include::lrp2.adoc[]
 <<<<
 // 3. Lista de requisitios preliminar v3.0
 include::lrp3.adoc[]
+
+<<<<
+// 4. Lista de requisitios preliminar v4.0
+include::lrp4.adoc[]
+
+<<<<
+// 5. Lista de requisitios preliminar v5.0
+include::lrp5.adoc[]
+
+<<<<
+//6. IEEE
+include::IEEE.adoc[]
+
+<<<<
+// ANEXO
+include::anexo.adoc[]
