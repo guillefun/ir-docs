@@ -1,4 +1,84 @@
-== LISTA DE REQUISITOS INICIAL V5
+== DOCUMENTO IEEE
+
+=== INTRODUCCIÓN
+
+==== ÁMBITO Y ALCANCE
+
+El sistema a desarrollar se llamará IRBet y así será referenciado a lo largo del documento.  
+
+Actualmente el juego de la Lotería Primitiva solamente permite la realización de apuestas físicas. El objetivo de IRBet es permitir la realización de dichas apuestas a través de la web, coexistiendo con el sistema actual y deberá tener en cuenta las apuestas físicas junto con las realizadas por Internet para el cálculo de todos los datos relativos a recaudación, reparto de premios, escrutinio, estadísticas, informes, etc. 
+
+IRBet deberá permitir el registro de los usuarios mayores de edad, residentes en España y se requerirá el reconocimiento mediante el NIF o DNI. Los usuarios registrados podrán realizar apuestas, guardar combinaciones para volver a usarlas en el futuro o configurar el sistema para que haga apuestas automáticas, que bien podrán ser de combinaciones predefinidas por el usuario o generadas aleatoriamente. Para gestionar el pago de las apuestas se usará el sistema de gestión de monedero, cargándolo con saldo a través de tarjeta de crédito/debito, traspaso rápido o Paypal, para posteriormente usar dicho saldo para pagar la apuesta. Para las apuestas realizadas de forma online el sistema generará un resguardo igual al que se genera en puntos de venta físicos. 
+
+Los usuarios no registrados en IRBet no podrán realizar apuestas, pero podrán consultar información acerca del juego de la Loteria Primitiva: reglas, premios, puntos de venta físicos... También podrán ver los sorteos en directo y ponerse en contacto con SELAE. 
+
+Además, IRBet permitirá al personal de SELAE gestionar los sorteos, calcular todos los datos relativos a la recaudación, escrutinio, pago de premios a las apuestas realizadas de forma online, estadísticas y generar diversos informes.  
+
+Debido a que IRBet será usado tanto por los empleados de SELAE como por los clientes que quieran apostar desde sus casas, éste estará alojado en un servidor remoto. 
+
+=== REQUISITOS ESPECIFICOS
+
+==== INTERFACES EXTERNAS
+
+===== INTERFACES DE USUARIO
+
+* RUI.1 El sistema deberá estar internacionalizado para los siguientes idiomas:
+** RUI.1.1 Castellano.
+** RUI.1.2 Catalán.
+** RUI.1.3 Inglés.
+** RUI.1.4 Euskera.
+** RUI.1.5 Gallego.
+** RUI.1.6 Valenciano.
+
+* RUI.2.-El sistema será accesible para los usuarios a través de un navegador web. 
+
+** RIU.2.2.-El navegador web deberá ser válido y que sea uno de los siguientes: 
+
+** RUI.2.2.1.-Google Chrome 
+
+** RUI.2.2.2.-Mozilla Firefox 
+
+** RUI.2.2.3.-Apple Safari 
+
+** RUI.2.2.4.-Opera 
+
+** RUI.2.2.5.-Microsoft Edge 
+
+** RUI.2.2.6.-Microsoft Internet Explorer 
+
+** RUI.2.2.7.-Vivaldi 
+
+** RUI.2.2.8.-Brave Explorer 
+
+* RUI.3.-El sistema deberá ser accesible para todo tipo de usuarios, incluido aquellos con discapacidad 
+
+** RUI.3.1.-Se deberán seguir los estándares especificados por la W3C en Web Content Accessibility Guidelines (WCAG) 2.01. 
+
+===== INTERFACES DE HARDWARE 
+
+* RHW.1 El sistema se comunicará con la bases de datos del sistema actual.
+** RHW.1.1 El sistema almacenará los siguientes datos:
+*** RHW.1.2.1 Usuarios.
+*** RHW.1.2.2 Apuestas.
+*** RHW.1.2.3 Sorteos.
+* RHW.2 El sistema usará un servidor de hosting para retransmitir los sorteos en directo. 
+
+===== INTERFACES DE COMUNICACIONES 
+
+* RCOM.1 El sistema se comunicará con el servidor de hosting.
+
+* RCOM.2 El sistema se comunicará con el servidor de dominio.
+
+* RCOM.3 El sistema se comunicará con APIs: 
+** RCOM.3.1 GoogleMaps API, para la localización de puntos físicos.
+** RCOM.3.2 Gmail API, para enviar correos desde a los usuarios.
+** RCOM.3.3 Google Analytics, para la recopilación de estadísticas y cookies.
+** RCOM.3.4 El sistema dispondrá de un acceso directo a redes sociales: 
+*** RCOM.3.4.1 Twitter.
+*** RCOM.3.4.2 Facebook.
+*** RCOM.3.4.3 Youtube.
+
+==== REQUISITOS FUNCIONALES
 
 REGISTRO DE USUARIO
 
@@ -253,44 +333,7 @@ PUBLICIDAD
 ** RPUB.1.1 La publicidad pertenece a los patrocinadores asociados.
 ** RPUB.1.2 La publicidad no inclumple las leyes establecidas en RNORM.1.
 
-LISTA NO FUNCIONALES
-
-INTERFACES DE USUARIO
-
-* RUI.1 El sistema deberá estar internacionalizado para los siguientes idiomas:
-** RUI.1.1 Castellano.
-** RUI.1.2 Catalán.
-** RUI.1.3 Inglés.
-** RUI.1.4 Euskera.
-** RUI.1.5 Gallego.
-** RUI.1.6 Valenciano.
-
-HARDWARE
-
-* RHW.1 El sistema se comunicará con la bases de datos del sistema actual.
-** RHW.1.1 El sistema almacenará los siguientes datos:
-*** RHW.1.2.1 Usuarios.
-*** RHW.1.2.2 Apuestas.
-*** RHW.1.2.3 Sorteos.
-
-* RHW.2 El sistema usará un servidor de hosting para retransmitir los sorteos en directo. 
-
-COMUNICACION EXTERIOR
-
-* RCOM.1 El sistema se comunicará con el servidor de hosting.
-
-* RCOM.2 El sistema se comunicará con el servidor de dominio.
-
-* RCOM.3 El sistema se comunicará con APIs: 
-** RCOM.3.1 GoogleMaps API, para la localización de puntos físicos.
-** RCOM.3.2 Gmail API, para enviar correos desde a los usuarios.
-** RCOM.3.3 Google Analytics, para la recopilación de estadísticas y cookies.
-** RCOM.3.4 El sistema dispondrá de un acceso directo a redes sociales: 
-*** RCOM.3.4.1 Twitter.
-*** RCOM.3.4.2 Facebook.
-*** RCOM.3.4.3 Youtube.
-
-
+===== OTROS REQUISITOS
 
 NORMATIVAS Y LEYES
 
@@ -335,7 +378,7 @@ NORMATIVAS Y LEYES
 
 
 
-== Futura tabla
+=== TABLA
  CUANTIA_MIN_BANCO -> 2000
  CUANTIA_MAX_BANCO -> 40000
  CUANTIA_MAX_LOTO -> 400

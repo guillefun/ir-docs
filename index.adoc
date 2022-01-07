@@ -41,5 +41,9 @@ include::lrp4.adoc[]
 include::lrp5.adoc[]
 
 <<<<
+//6. IEEE
+include::IEEE.adoc[]
+
+<<<<
 // ANEXO
 include::anexo.adoc[]
